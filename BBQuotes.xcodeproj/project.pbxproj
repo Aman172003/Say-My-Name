@@ -23,6 +23,7 @@
 		14B0C8B02C5659BC0059F729 /* FetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B0C8AF2C5659BC0059F729 /* FetchService.swift */; };
 		14B0C8B22C56F2A80059F729 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B0C8B12C56F2A80059F729 /* ViewModel.swift */; };
 		14B0C8B42C597E650059F729 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B0C8B32C597E640059F729 /* QuoteView.swift */; };
+		14B0C8B62C5AA7F10059F729 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B0C8B52C5AA7F10059F729 /* CharacterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		14B0C8AF2C5659BC0059F729 /* FetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchService.swift; sourceTree = "<group>"; };
 		14B0C8B12C56F2A80059F729 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		14B0C8B32C597E640059F729 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		14B0C8B52C5AA7F10059F729 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				14B0C8762C559E360059F729 /* BBQuotesApp.swift */,
 				14B0C8782C559E360059F729 /* ContentView.swift */,
 				14B0C8B32C597E640059F729 /* QuoteView.swift */,
+				14B0C8B52C5AA7F10059F729 /* CharacterView.swift */,
 				14B0C8B12C56F2A80059F729 /* ViewModel.swift */,
 				14B0C8AF2C5659BC0059F729 /* FetchService.swift */,
 				14B0C8A92C55A4050059F729 /* Quotes.swift */,
@@ -301,6 +304,7 @@
 				14B0C8B42C597E650059F729 /* QuoteView.swift in Sources */,
 				14B0C8AA2C55A4050059F729 /* Quotes.swift in Sources */,
 				14B0C8B02C5659BC0059F729 /* FetchService.swift in Sources */,
+				14B0C8B62C5AA7F10059F729 /* CharacterView.swift in Sources */,
 				14B0C8AC2C55A4F80059F729 /* Character.swift in Sources */,
 				14B0C8B22C56F2A80059F729 /* ViewModel.swift in Sources */,
 			);

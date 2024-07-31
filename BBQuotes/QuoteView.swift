@@ -10,6 +10,7 @@ import SwiftUI
 struct QuoteView: View {
     let vm = ViewModel()
     let show: String
+    @State var showCharacterInfo = false
     var body: some View {
 //        GeometryReader is a view in SwiftUI that provides access to the size and position of the parent view.
 //        GeometryReader: This is a container view that takes a closure as an argument. The closure receives a GeometryProxy (in this case, geo), which contains information about the size and position of the GeometryReader itself.
@@ -28,8 +29,10 @@ struct QuoteView: View {
                         switch vm.status {
                         case .notStarted:
                             EmptyView()
+                            
                         case .fetching:
                             ProgressView()
+                            
                         case .success:
                             Text("\"\(vm.quote.quote)\"")
                                 .multilineTextAlignment(.center)
@@ -57,6 +60,13 @@ struct QuoteView: View {
                             }
                             .frame(width: geo.size.width/1.1, height: geo.size.height/1.8)
                             .clipShape(.rect(cornerRadius: 50))
+                            .onTapGesture {
+                                showCharacterInfo.toggle()
+                            }
+                            .sheet(isPresented: $showCharacterInfo){
+                                CharacterView(character: vm.character, show: show)
+                            }
+                            
                         case .failed(let error):
                             Text(error.localizedDescription)
                         }
